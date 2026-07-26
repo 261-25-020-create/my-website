@@ -1,0 +1,20 @@
+baseURL = "https://261-25-020-create.github.io/my-website/"
+languageCode = "en-us"
+title = "Muhammad Abu Rayan"
+theme = "PaperMod"
+
+[params]
+  description = "Personal website of Muhammad Abu Rayan"
+  author = "Muhammad Abu Rayan"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
