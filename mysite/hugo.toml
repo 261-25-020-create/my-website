@@ -18,3 +18,14 @@ theme = "PaperMod"
     name = "About"
     url = "/about/"
     weight = 20
+    [params.homeInfoParams]
+  Title = "Hi, I'm Muhammad Abu Rayan 👋"
+  Content = "Welcome to my personal portfolio and blog! I write about software, technology, and my personal projects."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/261-25-020-create"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/your-profile"
