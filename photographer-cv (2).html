@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rayan — Photographer Portfolio & CV</title>
+<style>
+  :root {
+    --accent: #d97706;
+    --text: #1c1917;
+    --muted: #78716c;
+    --bg: #0c0a09;
+    --card: #fafaf9;
+    --border: #e7e5e4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Georgia', 'Segoe UI', serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--card);
+  }
+  header {
+    background: #111;
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+      url('https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1200&q=60');
+    background-size: cover;
+    background-position: center;
+  }
+  header h1 {
+    margin: 0 0 8px 0;
+    font-size: 2.6rem;
+    letter-spacing: 0.03em;
+  }
+  header p.role {
+    margin: 0 0 18px 0;
+    font-size: 1.15rem;
+    color: #fcd34d;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 0.9rem;
+    font-family: Arial, sans-serif;
+  }
+  .contact a { color: #fbbf24; text-decoration: none; }
+  main { padding: 40px; font-family: Arial, sans-serif; text-align: justify; }
+  section { margin-bottom: 36px; }
+  h2 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+    transition: opacity 0.2s ease;
+  }
+  .gallery a:hover img {
+    opacity: 0.85;
+  }
+  .entry { margin-bottom: 18px; }
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-weight: 700;
+  }
+  .entry-sub {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 2px 0 6px;
+    font-style: italic;
+  }
+  .entry ul { margin: 6px 0 0 18px; padding: 0; }
+  .entry li { margin-bottom: 4px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 12px; text-align: left; }
+  .tag {
+    background: var(--card);
+    color: #1c1917;
+    border: 1px solid #d6d3d1;
+    border-left: 3px solid var(--accent);
+    padding: 8px 16px;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 0.78rem;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    font-family: Arial, sans-serif;
+  }
+  @media (max-width: 600px) {
+    header, main { padding: 30px 24px; }
+    .entry-header { flex-direction: column; gap: 2px; }
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Muhammad Abu Rayan</h1>
+      <p class="role">Professional Photographer</p>
+      <div class="contact">
+        <span>📧 rayan56302@gmail.com</span>
+        <span>📍 Dhaka, Bangladesh</span>
+        <a href="https://500px.com/p/rayan56302" target="_blank">500px Portfolio</a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>About</h2>
+        <p>Photographer based in Dhaka, capturing portraits, landscapes, and street life with a focus on natural light and storytelling composition. Portfolio featured on 500px, with a growing body of work across travel, documentary, and fine-art photography.</p>
+      </section>
+
+      <section>
+        <h2>Featured Work</h2>
+        <div class="gallery">
+          <a href="https://500px.com/photo/1122273441/aloft-by-muhammad-abu-rayan" target="_blank" title="Aloft">
+            <img src="https://drscdn.500px.org/photo/1122273441/q%3D75_m%3D600/v2?sig=3e2560c35fa4ef8ddb05fb09bf9727a8c10f1b968c839213d01107be3b269a7e" alt="Aloft by Muhammad Abu Rayan">
+          </a>
+          <a href="https://500px.com/photo/1085045164/the-neuron-by-muhammad-abu-rayan" target="_blank" title="The Neuron">
+            <img src="https://drscdn.500px.org/photo/1085045164/q%3D75_m%3D600/v2?sig=9e3d2f9f3843024d507ed3b7a0c3ec1207c77df621191c2d0c26d06d1cbd4934" alt="The Neuron by Muhammad Abu Rayan">
+          </a>
+          <a href="https://500px.com/photo/1059077875/tagetes-by-muhammad-abu-rayan" target="_blank" title="Tagetes">
+            <img src="https://drscdn.500px.org/photo/1059077875/q%3D75_m%3D600/v2?sig=92e45765320a6baf7a952b580d5d19705d88a1f8a5a26898d5c1f2360ed4376b" alt="Tagetes by Muhammad Abu Rayan">
+          </a>
+          <a href="https://500px.com/photo/1054782624/kadam-by-muhammad-abu-rayan" target="_blank" title="KADAM">
+            <img src="https://drscdn.500px.org/photo/1054782624/q%3D75_m%3D600/v2?sig=0fa15c2d09ffb0f8790ff614c967c304b4cf041a4c4520f098eaa2d8e41dab21" alt="KADAM by Muhammad Abu Rayan">
+          </a>
+          <a href="https://500px.com/photo/1019247678/life-stages-by-muhammad-abu-rayan" target="_blank" title="Life Stages">
+            <img src="https://drscdn.500px.org/photo/1019247678/q%3D75_m%3D600/v2?sig=e0f97fb114ed59059dc84563bda8b2526aceecd791218a928bb08230b62335d2" alt="Life Stages by Muhammad Abu Rayan">
+          </a>
+          <a href="https://500px.com/photo/1016282119/tree-under-pastel-sky-by-muhammad-abu-rayan" target="_blank" title="Tree under Pastel Sky">
+            <img src="https://drscdn.500px.org/photo/1016282119/q%3D75_m%3D600_k%3D1/v2?sig=2eced8128620c876332925e5d6f4f25e5ff7890f7cc7577c9f81863e072a6078" alt="Tree under Pastel Sky by Muhammad Abu Rayan">
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <div class="entry">
+          <div class="entry-header">
+            <span>Freelance Photographer</span>
+            <span>Year — Present</span>
+          </div>
+          <div class="entry-sub">Self-employed, Dhaka</div>
+          <ul>
+            <li>Shoot portraits, events, landscapes, and street photography</li>
+            <li>Publish curated work on 500px and social platforms</li>
+            <li>Edit and retouch using Lightroom / Photoshop</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills & Gear</h2>
+        <div class="tags">
+          <span class="tag">Object Photography</span>
+          <span class="tag">Landscape Photography</span>
+          <span class="tag">Adobe Photoshop</span>
+          <span class="tag">Composition</span>
+          <span class="tag">Color Management</span>
+          <span class="tag">Ambient Light Control</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Recognition</h2>
+        <div class="entry">
+          <div class="entry-header">
+            <span>Featured Photographer, 500px</span>
+            <span>Year</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      This is a demo CV template for a photographer persona — replace placeholder photos, bio, and links with your own.
+    </footer>
+  </div>
+</body>
+</html>
