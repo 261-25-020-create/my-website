@@ -29,3 +29,5 @@ theme = "PaperMod"
 [[params.socialIcons]]
   name = "linkedin"
   url = "https://linkedin.com/in/your-profile"
+[markup.goldmark.renderer]
+  unsafe = true
